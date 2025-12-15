@@ -1,0 +1,119 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    sans-serif;
+}
+
+/* Electron Window Drag Support */
+[style*='WebkitAppRegion: drag'] {
+  -webkit-app-region: drag;
+}
+
+[style*='WebkitAppRegion: no-drag'] {
+  -webkit-app-region: no-drag;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--semi-color-fill-0);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--semi-color-fill-2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--semi-color-fill-1);
+}
+
+/* Semi Design Nav Fixes */
+.semi-navigation {
+  background: transparent !important;
+}
+
+.semi-navigation-item {
+  margin: 4px 8px !important;
+  border-radius: 8px !important;
+}
+
+.semi-navigation-item-selected {
+  background: var(--semi-color-primary-light-default) !important;
+}
+
+/* Card Hover Effects */
+.semi-card {
+  transition: all 0.2s ease;
+}
+
+.semi-card:hover {
+  transform: translateY(-2px);
+}
+
+/* Banner Styles */
+.semi-banner {
+  border-radius: 8px !important;
+}
+
+/* Button Transitions */
+.semi-button {
+  transition: all 0.15s ease !important;
+}
+
+/* Input Focus */
+.semi-input-wrapper:focus-within {
+  box-shadow: 0 0 0 2px var(--semi-color-primary-light-default) !important;
+}
+
+/* Progress Bar Animation */
+.semi-progress-track-inner {
+  transition: width 0.3s ease !important;
+}
+
+/* SideSheet Overlay */
+.semi-sidesheet-mask {
+  backdrop-filter: blur(2px);
+}
+
+/* Typography Improvements */
+.semi-typography-title {
+  letter-spacing: -0.02em;
+}
+
+/* Tag Enhancements */
+.semi-tag {
+  font-weight: 500 !important;
+}
+
+/* List Item Hover */
+.semi-list-item:hover {
+  background: var(--semi-color-fill-0);
+  border-radius: 8px;
+}
+
+/* Form Spacing */
+.semi-form-field {
+  margin-bottom: 20px !important;
+}
+
+/* Divider Styling */
+.semi-divider {
+  margin: 16px 0 !important;
+}

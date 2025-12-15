@@ -1,0 +1,3 @@
+provider: generic
+url: https://example.com/auto-updates
+updaterCacheDirName: kaca_ac_mode_setter_pkg-updater
